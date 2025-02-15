@@ -5,25 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Region 12</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
+        }
+        .header {
+            background-color: aqua;
+            width: 100%;
+            height: 75px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header h1 {
+            color: darkmagenta;
+        }
+        .menu {
+            background-color: #f0f0f0;
+            width: 200px;
+            position: fixed;
+            left: 0;
+            top: 80px;
+            height: 100%;
+            padding: 20px;
+            text-align: left;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: flex-start; /* Posisikan di atas */
-            height: 100vh; /* Gunakan tinggi penuh layar */
         }
-
-        h1 {
-            color: blue;
-            margin-top: 20px; /* Atur margin agar tidak terlalu ke atas */
+        .menu p {
+            margin: 10px 0;
+            padding: 10px;
+            background: lightgray;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .menu p:hover {
+            background: gray;
+            color: white;
+        }
+        .content {
+            margin-top: 80px; /* Hindari tertutup header */
+            margin-left: 220px; /* Hindari tertutup menu */
+            padding: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>BSR Jateng Tengah</h1>
-    <p>Dasboard Menu Khusu Report Sales SMD</p>
+
+    <div class="header">
+        <h1>BSR Jateng Tengah</h1>
+    </div>
+
+    <div class="menu">
+        <p>Platinum</p>
+        <p>Gold</p>
+        <p>Reguler D1</p>
+        <p>Reguler D2</p>
+        <p>Sales SMD</p>
+        <p>ASS</p>
+        <p>BM</p>
+        <p>RBM</p>
+    </div>
+
+    <div class="content">
+        <p>Dashboard</p>
+    </div>
+
 </body>
 </html>
